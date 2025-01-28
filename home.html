@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiMood - Decode Emotions with DL 🧠😊😢😠</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8e2de2 0%, #c650ba 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        header {
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            max-width: 800px;
+            opacity: 0;
+            animation: fadeInHero 2s ease-in-out forwards;
+        }
+        @keyframes fadeInHero {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #764ba2;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .emoji {
+            font-size: 2rem;
+            margin: 0 0.5rem;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EmojiMood 🎭</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Decode Emotions with DL 🧠🔍</h1>
+            <p>EmojiMood uses cutting-edge DL to analyze facial expressions and detect emotions with unparalleled accuracy. Elevate your understanding of human emotions!</p>
+            <div class="emoji">😊😢😠😲😐😍😎</div>
+            <a href="/predict" class="cta-button">Get Started 🚀</a>
+        </div>
+    </main>
+
+</body>
+</html>
+
+</html>
